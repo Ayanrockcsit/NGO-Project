@@ -1,0 +1,62 @@
+.top-img1 {
+    background-image: url('../img/top-gallary.webp');
+    min-height: 300px;
+    background-size: cover;
+}
+
+.top-img1 div {
+    background: rgba(52, 155, 151, 0.8);
+}
+
+.top-img1 h1 {
+    margin-top: 105px;
+}
+
+.top-contact span {
+    color: #4fd1d6;
+}
+
+.mid-line {
+    background: rgba(52, 155, 151, 0.8);
+    height: 3px;
+}
+
+.Contact-form .row {
+    min-height: 500px;
+    background-color: #003e40;
+}
+
+.Contact-form span {
+    color: #4fd1d6;
+}
+
+.Contact-form form {
+    padding: 0px 200px;
+}
+
+.Contact-form form input {
+    border: none;
+}
+
+.Contact-form form textarea {
+    padding-left: 10px;
+    resize: none;
+}
+
+.Contact-form form button {
+    background-color: #4fd1d6;
+}
+
+.Contact-card .card1 {
+    margin-left: 185px;
+}
+
+.Contact-card .card {
+    min-height: 180px;
+}
+
+.Contact-card {
+    background-color: #003e40;
+    min-height: 250px;
+}
+

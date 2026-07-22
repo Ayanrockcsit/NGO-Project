@@ -1,0 +1,29 @@
+img {
+    min-height: 300px;
+}
+
+.owl-carousel {
+    background-color: #003e40;
+}
+
+.footer {
+    height: 360px;
+}
+
+.footer input {
+    height: 50px;
+}
+
+.footer .btn {
+    background-color: #349b97;
+    border: none;
+}
+
+.footer .row {
+    background-color: #003e40;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}

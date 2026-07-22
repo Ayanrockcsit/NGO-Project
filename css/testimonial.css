@@ -1,0 +1,8 @@
+.bg-testimonials {
+    background: url(../img/testimonials-bg.png);
+    background-repeat: no-repeat;
+}
+
+.card-body a {
+    text-decoration: none;
+}
