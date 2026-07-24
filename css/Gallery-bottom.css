@@ -1,0 +1,95 @@
+.Gallery-bottom-left-top {
+    min-height: 330px;
+    width: 80%;
+    margin-left: 65px;
+}
+
+
+.Gallery-bottom-left-mid {
+    min-height: 130px;
+    width: 80%;
+    margin-left: 65px;
+}
+
+.Gallery-bottom-img2 {
+    background: url(../img/Gallery-bottom2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 130px;
+}
+
+.Gallery-bottom-left-bottom {
+    min-height: 150px;
+    width: 80%;
+    margin-left: 65px;
+}
+
+.Gallery-bottom-img3 {
+    background: url(../img/Gallery-bottom3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 130px;
+}
+
+.Gallery-bottom-mid-top {
+    min-height: 180px;
+    width: 100%;
+
+}
+
+.Gallery-bottom-mid-top-left {
+    min-height: 120px;
+    width: 25%;
+    float: left;
+}
+
+.Gallery-bottom-mid-mid {
+    min-height: 120px;
+    width: 100%;
+}
+
+.Gallery-bottom-mid-mid-left {
+    min-height: 100px;
+    width: 41%;
+    float: left;
+}
+
+.Gallery-bottom-mid-mid-right {
+    min-height: 100px;
+    width: 41%;
+    float: left;
+}
+
+.Gallery-bottom-mid-bottom {
+    min-height: 320px;
+    width: 100%;
+}
+
+.Gallery-bottom-right-top {
+    min-height: 230px;
+    width: 80%;
+}
+
+.Gallery-bottom-img4 {
+    background: url(../img/Gallery-bottom4.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
+}
+
+
+.Gallery-bottom-right-bottom {
+    min-height: 350px;
+    width: 80%;
+}
+
+.gallery-bottom-bg {
+    background: url(../img/Gallery-bottom-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+center a {
+    text-decoration: none;
+}
