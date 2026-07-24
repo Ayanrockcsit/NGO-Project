@@ -6,3 +6,11 @@
 .card-body a {
     text-decoration: none;
 }
+
+.testimonials img {
+    height: 100px;
+}
+
+.card-img-top {
+    height: 100px;
+}
