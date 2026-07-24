@@ -1,71 +1,289 @@
-.top-header{
-    background-color: #133e3d;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* ====== RESPONSIVE TOP HEADER ====== */
+.top-header {
+    background-color: #133e3d;
+    padding: 10px 0;
+}
+
 .smi {
     list-style-type: none;
-    
+    padding-left: 0;
 }
 
-.smi li 
-{
-    display:inline;
-   
-    border-radius:50%;
-}
-/*.first {
-    background-image: url('../img/background2.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 400px;
-
+.smi li {
+    display: inline-block;
+    margin-right: 15px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
 }
 
-.over {
-    height: 400px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.8;
-    background: #133e3d;
-    backdrop-filter: blur(3px);
+.smi li a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
 }
 
-.text {
-    position: relative;
-    padding: 100px 20px;
-    color: white;
-    text-align: center;
+.smi li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
 }
-*/
+
+/* ====== RESPONSIVE HEADER CONTENT ====== */
+.top-header .px-4 {
+    padding: 5px 10px !important;
+}
+
+.top-header .col-sm-6,
+.top-header .col-sm-3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* ====== RESPONSIVE NAVBAR ====== */
+.navbar {
+    padding: 0.5rem 0 !important;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #133e3d !important;
+}
+
+.navbar-nav .nav-link {
+    color: #133e3d !important;
+    margin: 0 5px;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #4da7a4 !important;
+}
+
+/* ====== RESPONSIVE ABOUT SECTION ====== */
 .about-part2 {
     background-color: #4da7a4;
+    padding: 30px 15px;
 }
 
 .vision-content {
-
     border: 2px solid;
     border-radius: 0 30px 0 30px;
     text-align: center;
     gap: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.vision-content:hover {
+    transform: translateY(-5px);
 }
 
 .content {
     text-align: center;
     color: #133e3d;
+    padding: 10px;
 }
 
 .heading {
     text-decoration: underline;
     color: #133e3d;
+    font-size: 24px;
+    margin-bottom: 15px;
 }
 
 .word {
     word-spacing: 5px;
+    line-height: 1.6;
 }
-.about-content{
-    border:2px solid;
+
+.about-content {
+    border: 2px solid;
     border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.about-content:hover {
+    transform: translateY(-3px);
+}
+
+#imgs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#imgs img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ====== MEDIA QUERIES FOR RESPONSIVE DESIGN ====== */
+
+/* Extra Small Devices (320px and up) */
+@media (max-width: 480px) {
+    .top-header {
+        padding: 8px 0;
+    }
+    
+    .top-header .row {
+        flex-direction: column;
+    }
+    
+    .top-header .col-sm-6,
+    .top-header .col-sm-3 {
+        width: 100% !important;
+        text-align: center !important;
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    
+    .smi {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    
+    .navbar-brand {
+        font-size: 20px;
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 13px;
+        margin: 0 3px;
+    }
+    
+    .heading {
+        font-size: 18px;
+    }
+    
+    .vision-content {
+        padding: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .about-content {
+        padding: 12px;
+        margin-bottom: 15px;
+    }
+    
+    #imgs {
+        gap: 8px;
+    }
+    
+    #imgs img {
+        max-width: 100%;
+    }
+}
+
+/* Small Devices (481px to 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .top-header {
+        padding: 10px 0;
+    }
+    
+    .top-header .col-sm-6 {
+        width: 100% !important;
+        text-align: center !important;
+        margin-bottom: 8px;
+    }
+    
+    .top-header .col-sm-3 {
+        width: 50% !important;
+        margin-bottom: 5px;
+    }
+    
+    .navbar-brand {
+        font-size: 22px;
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 13px;
+    }
+    
+    .heading {
+        font-size: 20px;
+    }
+    
+    .vision-content {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Medium Devices (768px to 1023px) - Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .top-header {
+        padding: 12px 0;
+    }
+    
+    .navbar-brand {
+        font-size: 23px;
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 14px;
+        margin: 0 8px;
+    }
+    
+    .heading {
+        font-size: 22px;
+    }
+    
+    .vision-content {
+        padding: 18px;
+        margin-bottom: 18px;
+    }
+    
+    .about-content {
+        padding: 18px;
+    }
+}
+
+/* Large Devices (1024px and up) - Desktops */
+@media (min-width: 1024px) {
+    .top-header {
+        padding: 15px 0;
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 15px;
+        margin: 0 12px;
+    }
+    
+    .heading {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .vision-content {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .about-content {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
 }
